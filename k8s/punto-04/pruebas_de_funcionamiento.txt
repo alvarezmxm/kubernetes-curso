@@ -1,0 +1,3 @@
+kubectl port-forward pod/stack-api-persona 8080:8080
+curl -i http://localhost:8080/api/personas/
+kubectl logs -l app=api-persona -c api-persona
